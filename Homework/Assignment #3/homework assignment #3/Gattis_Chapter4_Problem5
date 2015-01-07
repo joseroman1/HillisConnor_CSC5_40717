@@ -1,0 +1,42 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 3, 2014, 10:06 PM
+ */
+// system libraries
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+// execution begins here
+int main(int argc, char** argv) {
+    // declare variables
+    int pA, bP; // pA= points awarded, bP= books purchased
+    
+    // input variables
+    cout << "enter number of books purchased this month: ";
+    cin >> bP;
+    // output results
+    if (bP==0) {
+        cout << "the number of points awarded is 0";
+    }
+    if (bP==1) {
+         cout << "the number of points awarded is 5";
+    }
+    if (bP==2) {
+         cout << "the number of points awarded is 15";
+    }
+    if (bP==3) {
+         cout << "the number of points awarded is 30";
+    }
+    if (bP>4) {
+         cout << "the number of points awarded is 60";
+    }
+    
+    return 0;
+}
+

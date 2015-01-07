@@ -1,0 +1,39 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 10, 2014, 1:36 PM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+   // declare variables
+    float lit; // lit= liters
+    float mpg;// mpg= miles per gallon
+    float mpl;// mpl= miles per liter
+    int gal; // gal= gallons
+    int mi; // miles traveled
+    int sent =0;
+    
+    do {
+        cout << "enter number of liters of gas consumed by the car: ";
+        cin >> lit;
+        cout << "enter number  of miles the car traveled: ";
+        cin >> mi;
+        mpl=mi/lit;
+        mpg= mpl/.264179;
+        cout << "the number of miles per gallon is: " << mpg << endl;
+        cout<<"If you would like to exit enter -1, else to continue enter 0"<<endl;
+        cin >> sent;
+    }while(sent!=-1);
+
+    
+    return 0;
+}
+

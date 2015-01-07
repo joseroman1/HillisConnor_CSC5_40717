@@ -1,0 +1,28 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 9:37 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float ftPa=43560, nAcres= .25, ftPA=0, mPA=0;
+    
+    mPA= (ftPa/10.7639)*.25, ftPA= 4356*.25;
+// ftPa= square feet per acre, mPa= square meters per acre, nAcres= number of acres,
+//mPA= meters per quarter acre, ftPA- feet per quarter acre.            
+    cout << "1/4 acre in square meters=:" << mPA << endl;
+    
+    cout << "1/4 acre in square feet=:" << ftPA << endl;
+
+    return 0;
+}
+

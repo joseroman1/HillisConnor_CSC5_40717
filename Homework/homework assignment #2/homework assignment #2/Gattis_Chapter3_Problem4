@@ -1,0 +1,27 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 30, 2014, 6:59 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int rIc, rC;
+    float rP= 0.8;
+    // rIc= recommended insurance coverage, rC= replacement cost
+    // rP= recommended percentage
+    cout << "enter building cost: ";
+    cin >> rC;
+    rIc= rC*rP;
+    cout << "your recommended insurance coverage is:" << rIc << endl;
+    return 0;
+}
+

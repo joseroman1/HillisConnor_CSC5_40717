@@ -1,0 +1,42 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 7, 2014, 11:31 AM
+ */
+// system libraries
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+// declare variables
+int nC; // nC=number of checks 
+float bF; // bF= total bank fees
+        
+cout << "enter the number of checks written during the past month: ";
+cin >> nC;
+
+if (nC<20) {
+    bF=(nC*.1)+10;
+    cout << "total of bank fees for the month is: " << bF << endl;
+}
+if (nC>=20 && nC<40) {
+    bF=(nC*.08)+10;
+    cout << "total of bank fees for the month is: " << bF << endl;
+}
+   if (nC>=40 && nC<60) {
+    bF=(nC*.06)+10;
+    cout << "total of bank fees for the month is: " << bF << endl;
+}
+if (nC>=60) {
+    bF=(nC*.04)+10;
+    cout << "total of bank fees for the month is: " << bF << endl;
+}
+
+return 0;
+}
+

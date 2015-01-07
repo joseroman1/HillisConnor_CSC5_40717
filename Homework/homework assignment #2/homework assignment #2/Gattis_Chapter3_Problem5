@@ -1,0 +1,35 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 30, 2014, 10:56 PM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+//user libraries
+//global constants
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    std:: cout << std::fixed;
+    std::cout <<
+    std:: setprecision(4);
+    std::cout;
+    // vaviable declarations.
+    int atBts, hits;
+    float avg;
+    cout << "how many times was the player at bat?: ";
+    cin >> atBts;
+    cout << "how many hits did the player get?: ";
+    cin >> hits;
+    // calculations.
+    avg= static_cast<float>(hits/atBts);
+    cout << "the player's batting average is: " << avg << endl;
+    return 0;
+}
+

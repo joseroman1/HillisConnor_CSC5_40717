@@ -1,0 +1,28 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 29, 2014, 10:15 PM
+ */
+// Savitch: page 72, Question 18
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int x, y;
+    float q, r;
+    cout << "enter two integers in decreasing order:";
+    cin >> x >> y;
+    q= x/y;
+    cout << "x divided by y equals:" << q << endl;
+    r=x%y;
+    cout << "the remainder of x/y is:" << r << endl;
+    
+
+    return 0;
+}
+

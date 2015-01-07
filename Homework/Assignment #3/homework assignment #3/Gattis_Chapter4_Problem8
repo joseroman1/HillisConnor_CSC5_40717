@@ -1,0 +1,51 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 5, 2014, 10:51 AM
+ */
+//System libraries
+#include <cstdlib>
+#include <iostream>
+#include <ctime>
+
+
+
+using namespace std;
+
+/*
+ * 
+ */
+//Execution begins here 
+int main(int argc, char** argv) {
+    // Declare variables
+    int n1, n2,guess, sum=0; // n1= first number, n2= second number, sum= sum of n1 
+    //and n2.
+    (n1<50 && n1>10);
+    (n2<50 && n2>10);
+    // random number seed.
+    srand(time(NULL));
+    srand(time (NULL));
+    //restrict random number values
+    n1= rand()%49;
+    n2= rand()%49;       
+    n1>=11;
+    n2>=11;
+    
+    //Calculations
+    sum=n1+n2; 
+   // output results
+    cout << n1 << "+" << n2 << endl;
+    cin >> guess;
+    
+    if (guess== n1+n2) {
+        cout << "congratulations";
+    }
+    if (guess!= n1+n2) {
+        cout << "correct answer: " << sum << endl;
+    }
+    
+    
+    return 0;
+}
+

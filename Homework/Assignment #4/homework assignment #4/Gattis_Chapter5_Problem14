@@ -1,0 +1,59 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 10, 2014, 7:04 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+// user libraries
+
+// global constants
+
+// function prototypes
+int main(int argc, char** argv) {
+    // declare variables
+    float iR; // inflation rate
+    int dlrs; // dlrs= number of dollars
+    int cnt;  // cnt= count
+    float aWAI; //aWAI= amount worth after inflation 
+    
+    // acquire input
+    cout << "enter annual inflation rate: ";
+    cin >> iR; 
+    
+    // for loop
+    for (cnt=1; cnt>=1 && cnt<=10; cnt++){
+        aWAI=(1/(1+(cnt*iR)))*1000;
+        cout<<setprecision(2)<<fixed;
+        cout << "$1000 will be worth $ " <<  aWAI << " after " << cnt << " year"
+                << endl;
+        std::setprecision(2);
+    }
+    
+return 0;
+}
+
+
+
+ 
+   
+    
+//14. Rate of Inﬂation
+//The annual rate of inﬂation is the rate at which money loses its value. For example, if the
+//annual rate of inﬂation is 3.0%, then in one year it will cost $1030 to buy the goods that
+//could have been purchased for $1000 today. Put another way, a year from now $1000 will
+//only buy 1/1.03 * $1000, or $970.87, worth of goods. Two years from now $1000 will
+//only buy only 1/1.03 of $970.87, or $942.59 worth of goods. Write a program that allows
+//the user to enter an annual rate of inﬂation and then reports how much $1000 today will
+//be worth each year for the next 10 years. 
+//Input validation: Do not accept an inﬂation rate less than 1% or greater than 15%.
+    
+    
+// 1/1.03 * $1000 ======= 1/
+
+

@@ -1,0 +1,39 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 3, 2014, 10:54 AM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    char a, b;
+    int n1, n2;
+    cout << "enter two integers separated by a space: ";
+    cin >> n1 >> n2;
+    
+    a= n1;
+    b= n2;
+    if (a > b) {
+        cout << n1 << " is greater than " << n2 << "," << endl;
+        cout << "so " << n2 << " is less than " << n1;
+        cin >> n1 >> n2; 
+    }
+    if (a < b) {
+        cout << n1 << " is less than " << n2 << endl;
+        cout << "so " << n2 << " is greater than " << n1;
+        cin >> n1 >> n2;
+    } 
+    if (a = b) {
+        cout << n1 <<" is equal to " << n2;
+        cin >> n1 >> n2;
+    }
+    return 0;
+}
+

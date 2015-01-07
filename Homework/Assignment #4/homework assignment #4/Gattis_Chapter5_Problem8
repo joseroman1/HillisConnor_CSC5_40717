@@ -1,0 +1,38 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 10, 2014, 9:47 AM
+ */
+// system libraries
+#include <iostream>
+
+using namespace std;
+
+// user libraries
+
+// global constants
+
+// function prototypes
+
+//execution begins here
+int main(int argc, char** argv) {
+    //declare variables
+    int cnt; // cnt= count
+    int nMin; // nMin= number of minutes
+    const float cPM= 3.9; // cPM= calories per minute
+    float tCB; // tCB= total calories burned
+    
+    // for loop
+    for (cnt=10; cnt>=10 && cnt <=30; cnt+=5) {
+        tCB= cnt*cPM;
+        cout << "the number of calories burned after " << cnt << " minutes is "
+                << tCB << endl;
+    }
+
+    return 0;
+}
+
+//8. Calories Burned
+//Running on a particular treadmill you burn 3.9 calories per minute. Write a program that
+//uses a loop to display the number of calories burned after 10, 15, 20, 25, and 30 minutes.

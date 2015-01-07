@@ -1,0 +1,45 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 3, 2014, 11:49 PM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+//Global constants 
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    // declare variables
+    int sec, min, hr, day; // sec= second, min= minute, hr= hour, day= day.
+    
+    cout << "enter number of seconds: ";
+    cin >> sec;
+    // calculations
+    day=sec/86400;
+   
+    if (sec>=86400) {
+        cout << "there are " << day << " days in " << sec << " seconds" << endl;
+    }
+    hr=sec/3600;
+    
+    if (sec>=3600&& sec<=86400) { 
+     cout << "there are " << hr << " hours in " << sec << " seconds" << endl;;
+    }
+    min=sec/60;
+    
+    if (sec>=60&& sec<3600) {
+        cout << "there are " << min << " minutes in " << sec << " seconds" 
+                << endl;
+    }
+    if (sec<60) {
+        cout << "there are " << sec << " seconds";
+    }    
+    return 0;
+}
+

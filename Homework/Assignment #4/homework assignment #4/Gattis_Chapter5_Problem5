@@ -1,0 +1,35 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 8, 2014, 11:19 PM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+// user libraries
+
+// Global constants
+
+ // function prototypes
+ 
+// execution begins here
+int main(int argc, char** argv) {
+    
+    // declare variables
+    float kph, mph; // kph= kilometers per hour, mph= miles per hour.
+    int cnt; // count
+    
+    //for loop
+     for (cnt=60; cnt>=60 && cnt<=130; cnt+=5) {
+         mph= cnt*.6214f;
+         cout << cnt << " kph= " << mph << " mph" << endl;
+     }
+    return 0;
+}
+// exit stage right!
+
+

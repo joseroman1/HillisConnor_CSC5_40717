@@ -1,0 +1,33 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 29, 2014, 11:06 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float rent, util, phon, cabl, tot;
+   // rent= rent bill, util= utilities bill, cabl= cable bill;
+    // phon= phone bill, tot= total bill.
+    cout << "enter rent amount:";
+    cin >> rent;
+    cout << "enter utilities amount:";
+    cin >> util;
+    cout << "enter phone amount:";
+    cin >> phon;
+    cout << "enter cable amount:";
+    cin >> cabl;
+    cout << endl;
+    tot= rent+util+phon+cabl;
+    cout << " your total bill amount is:" << tot << endl;
+    return 0;
+}
+

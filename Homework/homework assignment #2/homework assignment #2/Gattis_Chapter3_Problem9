@@ -1,0 +1,35 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 2, 2014, 11:01 AM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int nW; // Number of widgets.
+    int nWPH; // Number of widgets a pallet holds.
+    float wP; // weight of pallet.
+    float wW= 9.2; // weight in pounds of a widget.
+    
+    
+    cout << "input the weight of the pallet in pounds: ";
+    cin >> wP;
+    cout << "input the number of widgets: ";
+    cin >> nW;
+    // Calculations
+    nWPH= wP*(nW*wW);
+    cout << "the number of widgets a pallet can hold is: " << nWPH << " lb" <<
+            endl;
+    
+    
+
+    return 0;
+}
+

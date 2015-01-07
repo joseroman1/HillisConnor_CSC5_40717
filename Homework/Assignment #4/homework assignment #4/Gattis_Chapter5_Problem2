@@ -1,0 +1,41 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 7, 2014, 9:21 PM
+ */
+
+
+
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+// execution begins here
+int main(int argc, char** argv) {
+    unsigned int pIv; // pIv= positive integer value.
+    unsigned int cnt; // cnt= count
+    unsigned int sum; // summation
+    
+    // inputs
+    cout<< "enter a positive integer value: ";
+    cin >> pIv;
+    
+    // for loop for summation
+   for (int cnt=1; cnt<pIv; cnt++);
+    sum= (pIv*(pIv+1))/2;
+    
+    // output results
+    cout << "The sum of all positive integers from 1 to " << pIv << " is " << 
+            sum;
+    
+    
+
+    return 0;
+}
+

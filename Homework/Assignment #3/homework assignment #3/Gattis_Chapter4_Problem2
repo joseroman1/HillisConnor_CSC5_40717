@@ -1,0 +1,54 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 3, 2014, 12:32 PM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+     
+    
+    int nOTT; // number from one to ten.
+   cout << "Enter an integer value from 1 to 10: ";
+   cin >> nOTT;
+   switch (nOTT) {
+       case 1:
+           cout << nOTT << " is I" ;
+           break;
+       case 2:
+           cout << nOTT << " is II";
+           break;
+       case 3:
+           cout << nOTT << " is III";
+           break;                 
+       case 4:
+           cout << nOTT << " is IV"; 
+       case5:
+           cout << nOTT << " is V";
+           break;
+       case6:
+           cout << nOTT << " is VI";
+           break;
+       case7:
+           cout << nOTT << " is VII" ;
+           break;
+       case8:
+           cout << nOTT << " is VIII";
+           break;
+       case9:
+           cout << nOTT << " is IX";
+           break;
+       case10:
+           cout << nOTT << " is X";
+           break;
+   }
+    return 0;
+}
+

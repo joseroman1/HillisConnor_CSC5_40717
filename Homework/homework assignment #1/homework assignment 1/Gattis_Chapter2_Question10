@@ -1,0 +1,23 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 10:38 PM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    cout << "Connor Hillis" << endl;
+    cout << "11236 Lambert Dr., Riverside California. 92503" << endl;
+    cout << "909-731-8613" << endl;
+    cout << "Economics" << endl;
+
+    return 0;
+}
+

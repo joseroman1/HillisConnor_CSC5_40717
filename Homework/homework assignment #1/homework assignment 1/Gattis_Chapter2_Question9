@@ -1,0 +1,25 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 10:25 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float pp=.40, pTp= 12.67, sP=0;
+    sP= pTp+(pTp*pp);
+             
+// pp= percent profit, pTp= price to produce, sP= selling price.
+    cout << "the selling price is:" << sP << endl;
+
+    return 0;
+}
+

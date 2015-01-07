@@ -1,0 +1,35 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 7:22 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float mP= 44.50, tipP= .15 , taxP= 6.75e-2, totBil=0, taxA=0, tipA=0;
+    
+    totBil= mP+(mP*tipP)+(mP*taxP);
+    
+    taxA= taxP*mP;
+    
+    tipA= tipP*mP;
+    
+    mP= mP;
+    
+// mP= meal price, tipP= tip percentage, taxP= tax percentage, tMc= total meal cost 
+// taxA= tax amount, taxA= tax amount, totBil= total bill    
+            cout << "meal price:" << mP << endl;
+            cout << "tax amount:" << taxA << endl;
+            cout << "tip amount:" << tipA << endl;
+            cout << "total bill:" << totBil << endl;
+    return 0;
+}
+

@@ -1,0 +1,25 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 8:08 PM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+   int mBr= 350, nGg= 16, mpg=0;
+    
+    mpg= mBr/nGg;
+    
+// mpg= miles per gallon, mBr= miles before refueling, nGg= number of gallons of gas the car holds.
+    cout << "miles per gallon:" << mpg << endl;
+    return 0;
+}
+

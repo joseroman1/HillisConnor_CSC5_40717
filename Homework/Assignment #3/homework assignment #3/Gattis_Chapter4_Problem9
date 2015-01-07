@@ -1,0 +1,50 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 5, 2014, 3:23 PM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+// execution begins here
+int main(int argc, char** argv) {
+    //Declare variables
+    int qP, oP;   // qP= quantity purchased, oP= original price.
+    float pP, pD;     // pP= price payed, //pD= percent discount
+    // inputs
+    cout << "enter quantity of units in a package: ";
+    cin >> qP;
+    //Calculations
+   pP = oP+(pD*qP);
+   oP= 99;
+   // output results
+   if (qP>=0 && qP<=9) {
+       pP= oP*qP;
+       cout << "the purchase price is: " << pP << "$";
+   }
+   if (qP>=10 && qP<=19) {
+         pP = (oP*qP)-(.2*(oP*qP));
+        cout << "the purchase price is: " << pP << "$";
+    }
+    if (qP>=20 && qP<=49) {
+        pP= (oP*qP)-(.3*(oP*qP));
+        cout << "the purchase price is: " << pP << "$";
+    }
+    if (qP>=50 && qP<=99) {
+        pP= (oP*qP)-(.4*(oP*qP));
+        cout << "the purchase price is: " << pP << "$";
+    }        
+     if (qP>=100) {
+        pP= (oP*qP)-(.5*(oP*qP));
+        cout << "the purchase price is: " << pP << "$";   
+     }    
+    return 0;
+}
+

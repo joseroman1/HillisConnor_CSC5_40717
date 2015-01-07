@@ -1,0 +1,51 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 1, 2014, 9:59 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+   //declare variables
+    int aTS; //number of adult tickets sold..
+    int cTS;//number of child tickets sold.
+    int aTP=6;//adult ticket price in dollars.
+    int cTP=3;//child ticket price in dollars.
+    float tR, tPP; // tR= total revenue for the night. 
+    //tPP= theater's percent of the profit.
+    float tPOP;// theater's percent of the total profit.
+    float mTNP;// mTNP= movie theater net profit.
+    float nP;// nP= net profit. 
+    char title;
+    
+    cout << "what was the title of the movie?: ";
+    cin >> title;
+    
+    cout << "how many adult tickets were sold?: ";
+    cin >> aTS;
+    cout << "how many child tickets were sold?: ";
+    cin >> cTS;
+    //calculations.
+    nP= (aTP*aTS)+(cTP*cTS);
+    cout << "the theater's percent of the profit (as a decimal) is: ";
+    cin >> tPOP;
+    cout << "the theater's net profit for the night is: $" << nP << endl;
+    mTNP= nP*tPOP;
+    cout << "the theater's gross profit for the night is: $" << mTNP << endl; 
+    
+    
+    
+    
+    
+
+    return 0;
+}
+

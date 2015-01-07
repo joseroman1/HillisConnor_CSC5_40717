@@ -1,0 +1,34 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 30, 2014, 11:40 PM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    short fS, sS, tS, frthS, fthS;
+    float avg;
+    // fS= first score, sS= second score, tS= third score, frthS= fourth score,
+    //fths= fifth score.
+    cout << "enter test score number one: ";
+    cin >> fS;
+    cout << "enter test score number two: ";
+    cin >> sS;
+    cout << "enter test score number three: ";
+    cin >> tS;
+    cout << "enter test score number four: ";
+    cin >> frthS;
+    cout << "enter fifth test score: ";
+    cin >> fthS;
+    avg= (fS+ sS+tS+ frthS + fthS)/5;
+    cout << "the average test score is: " << avg << endl;
+    return 0;
+}
+

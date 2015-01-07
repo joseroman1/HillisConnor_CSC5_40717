@@ -1,0 +1,55 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 3, 2014, 9:08 PM
+ */
+// system libraries
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+// execution begins here
+int main(int argc, char** argv) {
+    // Declare variables
+    int l1, w1, a1, l2, w2, a2; // l= length, w= width, a= area
+    // input variables
+    cout << "use the same units for each triangle" << endl;
+    cout << endl;
+    cout << "enter the length of the first triangle: ";
+    cin >> l1;
+    cout << "enter the width of the first triangle: ";
+    cin >> w1;
+    cout << endl;
+   cout << "enter the length of the second triangle: ";
+    cin >> l2;
+    cout << "enter the width of the second triangle: ";
+    cin >> w2;
+    cout << endl;
+// calculations
+    a1= l1*w1;
+    cout << "the area of the first triangle is: " << a1 << endl;
+    // calculations
+    a2=l2*w2;
+    cout << "the area of the second triangle is: " << a2 << endl;
+    cout << endl;
+    
+    // compare areas of the triangles
+    if (a1>a2) {
+        cout << "the area of the first triangle is greater than the area of the"
+                " second triangle" << endl;
+    }
+    if (a1<a2) {
+        cout <<  "the area of the first triangle is less than the area of the"
+                " second triangle" << endl;
+    }
+    if (a1==a2) {
+        cout << "the areas of the triangles are equal" << endl;
+    }    
+    
+    return 0;
+}
+

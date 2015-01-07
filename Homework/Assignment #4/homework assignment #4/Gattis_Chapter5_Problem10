@@ -1,0 +1,59 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 10, 2014, 10:08 AM
+ */
+// system libraries
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+// user libraries
+
+// global constants
+
+// function prototypes
+
+// execution begins here
+int main(int argc, char** argv) {
+    
+    // declare variables
+    unsigned int r; // random integer between 1 and 100.
+    int gues; // gues= users guess.
+    int nGues;// nGues= next guess.
+    
+    // set random number seed
+    srand(static_cast<unsigned int>(time(0)));
+    // random number generator
+     r= rand()/1;
+    do {
+        cout << "guess a whole number between 1 and 100: ";
+    cin >> gues;
+       if (r> gues) {
+          r<=100 && r>=1;
+        cout << "Too low. Try again." << endl;
+        cout << "guess a whole number between 1 and 100:";
+        cin >> nGues;
+    }
+    else if (r< gues) {
+         r<=100 && r>=1;
+        cout << "Too high. Try again." << endl;
+        cout << "guess a whole number between 1 and 100: ";
+        cin >> nGues;
+    }
+    else if (r== gues) {
+        cout << "Congratulations. You figured out my number." << endl; 
+    }
+    else if (r> 100 || r< 1) {
+        cout << "the number entered is not in the required range." << endl;
+        cout << "guess a whole number between 1 and 100: ";
+        cin >> nGues;
+    }
+    }
+     while ( r!= gues || r!=nGues);
+    return 0;
+}
+

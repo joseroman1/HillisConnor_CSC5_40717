@@ -1,0 +1,24 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 6:53 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float pP= 52, sT= .04, cT= .02, tTa=0;
+    tTa= (pP*sT)+(pP*cT);
+// pP= purchase price, sT= state tax, cT= country tax, tTa= total tax amount
+cout << "total tax amount:" << tTa << endl;            
+    
+    return 0;
+}
+

@@ -1,0 +1,26 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 26, 2014, 10:48 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    short gP= 32500, bWgp=0, twMgp=0;
+    bWgp= gP/26, twMgp= gP/24;
+// gP= gross pay,bWgp= biweekly gross pay, bWgp= biweekly gross pay, 
+// twMgp= twice per month gross pay.
+    cout << "amount paid per pay period when paid biweekly:" <<bWgp << endl;
+    cout << "amount paid per pay period when paid twice per month:" << twMgp << endl;
+
+    return 0;
+}
+

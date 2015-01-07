@@ -1,0 +1,39 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 3, 2014, 1:23 PM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int mon, day, yr;  //mon= numerical value of month, day= numerical value of
+                      //day, yr= last two digits of four digit year.
+    float prod;      // prod= product of numerical day and month.
+   //obtain input
+    cout << "enter the month in numeric form: ";
+    cin >> mon;
+    cout << "enter the day of the month in numeric form: ";
+    cin >> day;
+    cout << "enter the two digit year: ";
+    cin >> yr;
+   
+    // calculations
+    prod= mon*day;
+    
+    if (prod==yr) {
+        cout << "the date is magic " << endl;   
+    }
+    if (prod!=yr) {
+        cout << "the date is not magic " << endl;
+    }
+
+    return 0;
+}
+

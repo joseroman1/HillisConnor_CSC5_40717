@@ -1,0 +1,41 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on June 30, 2014, 10:00 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    std::cout << std::fixed;
+    std::cout << std::setprecision(2);
+    std::cout;
+    
+    int a, b, c;
+    unsigned short tR;
+    // a= class A ticket, b= class B ticket, c= class C ticket, 
+    // tR= total revenue.
+    cout << "how many class A tickets were sold?: ";
+    cin >> a;
+    cout << "how many class B tickets were sold?: ";
+    cin >> b;
+    cout << "how many class C tickets were sold?: ";
+    cin >> c;
+    //Calculations
+    tR= ((15.00*a)+(12.00*b)+(9.00*c));
+    cout << "the total income from ticket sales is: $" << tR << endl;
+    
+    
+    
+
+    return 0;
+}
+

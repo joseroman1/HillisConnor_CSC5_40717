@@ -1,0 +1,55 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 11, 2014, 12:28 AM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+// user libraries
+
+// global constants
+
+// function prototypes
+
+// execution begins here
+int main(int argc, char** argv) {
+    // declare variables
+    const int sPF= 20; // sPF= suites per floor
+    const int tS= 120;  // tS= total number of suites in hotel
+    int oS;  // oS= number of occupied suites
+    float pSFIF; // pSF= percentage of suites filled on individual floors
+    float tPSF; // tPSF= total percent of suites filled
+    int cnt;  // cnt= count
+    
+    
+    // for loop
+    for (cnt= 10; cnt>=10 && cnt<=16; cnt++) {
+        cout << "enter the number of suites filled on this floor: ";
+        cin >> oS;
+        pSFIF= oS/20;
+        cout << setprecision(2) << fixed;
+        cout << "the percentage of suites that are occupied on this floor is: " 
+                << pSFIF << " %" << endl;
+    }
+    tPSF= pSFIF/cnt;
+    cout << "the total percentage of suites filled in the building is " << tPSF
+            << endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

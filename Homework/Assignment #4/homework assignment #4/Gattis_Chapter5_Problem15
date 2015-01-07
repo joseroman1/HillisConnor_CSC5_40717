@@ -1,0 +1,63 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 10, 2014, 11:24 PM
+ */
+// system libraries
+#include <iostream>
+
+using namespace std;
+
+// user libraries
+
+// global constants
+
+// function prototypes
+
+// execution begins here
+int main(int argc, char** argv) {
+    // declare variables
+    int iNOs; // iNOs= number of organisms
+    int nDays; // nDays= number of days the organisms multiply
+    float aPPI; // aPPI= average percent population increase
+    float TOs;  // TOs= total organisms on a given day
+    int cnt;    // cnt= count
+    
+    
+    
+    // acquire input
+    
+    // do-while loop
+    do {
+        cout << "enter the initial number of organisms: ";
+    cin >> iNOs;
+    cout << "enter the average daily population increase: ";
+    cin >> aPPI;
+    cout << "enter number of days the organisms multiply for: ";
+    cin >> cnt;
+    cnt++;
+    TOs =(cnt*(iNOs*(1+aPPI)));
+    cout << "the predicted population size after " << cnt-1 << " days is " << TOs 
+            << endl;
+        }
+    while (iNOs>=2 && aPPI>=0 && nDays>=1);
+    
+    return 0;
+}
+
+
+
+
+//15. Population
+//Write a program that will predict the size of a population of organisms. The program
+//should ask the user for the starting number of organisms, their average daily population
+//increase (as a percentage of current population), and the number of days they will multiply.
+//A loop should display the size of the population for each day.
+//Input Validation: Do not accept a number less than two for the starting size of the
+//population. Do not accept a negative number for average daily population increase.
+//Do not accept a number less than one for the number of days they will multiply
+
+
+
+

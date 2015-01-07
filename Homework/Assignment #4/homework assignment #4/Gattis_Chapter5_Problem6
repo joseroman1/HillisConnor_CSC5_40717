@@ -1,0 +1,35 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 9, 2014, 10:33 PM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+// user libraries
+
+// function prototypes
+
+// execution begins here
+int main(int argc, char** argv) {
+    // variable declaration
+    const float mmPy= 3.1; // mmPy= millimeters per year.
+    float tMR;  // tMR= total millimeters risen.
+    int yr;     // yr= year number.
+    int cnt;    // count.
+    
+    // for loop
+    for (cnt=1; cnt<=25 && cnt>=1; cnt++) {
+        tMR=mmPy*cnt;
+        
+        cout << "The ocean will have risen " << tMR << " millimeters in "
+                << cnt << " year(s)." << endl;
+    }
+
+    return 0;
+}
+//exit stage right!

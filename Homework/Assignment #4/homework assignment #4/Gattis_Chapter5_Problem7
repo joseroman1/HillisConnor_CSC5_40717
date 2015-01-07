@@ -1,0 +1,48 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 9, 2014, 11:02 PM
+ */
+// system libraries
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+// user libraries
+
+// global constants
+
+// function prototypes
+
+// execution begins here
+int main(int argc, char** argv) {
+    // variable declarations
+    int nDays; // nDays= number of days worked.
+    float dPay; // dPay= daily pay.
+    const float iP=.01;   // iP= initial pay in dollars.
+    float tP;   // tP= total pay.
+    int cnt;   // cnt= count
+   
+    // acquire input
+    cout << "enter the number of days worked in the month: ";
+    cin>> nDays;
+    
+    // while loop
+    for (cnt=0; cnt<=nDays && cnt>=0; cnt++) {
+        tP= iP*pow(2,cnt);
+         cout << "total pay after day " << cnt+1 << " is: $" << tP << endl;
+    }
+    cout.precision(2);
+    return 0;
+}
+
+//(nDays<=31 && nDays>=1)
+
+//tP= dPay*nDays;
+
+//tP= pow(dPay,2);
+
+//tP= dPay*pow(2,cnt);

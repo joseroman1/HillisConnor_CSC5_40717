@@ -1,0 +1,48 @@
+/* 
+ * File:   main.cpp
+ * Author: Connor Hillis
+ *
+ * Created on July 1, 2014, 12:05 AM
+ */
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    string a, b, c;
+    int iMOne, iMTwo, iMThr;
+    float avg;
+    // a= first month, b= second month, c= third month.
+    // x= inches in month one, y= inches in month two, z= inches in month three.
+    //avg= average rainfall for the three months.
+    a=iMOne,
+    cout << "enter the first month: ";
+    cin >> a;
+    cout << "enter the number of inches of rain in this month: ";
+    cin >> iMOne;
+    cout << endl;
+    b=iMTwo;
+    cout << "enter the second month: ";
+    cin >> b;
+    cout << "enter the number of inches of rain in this month: ";
+    cin >> iMTwo;
+    cout << endl;
+    c=iMThr;
+    cout << "enter the third month: ";
+    cin >> c;
+    
+    cout << "enter the number of inches of rain in this month: ";
+    cin >> iMThr;
+    
+    avg= (iMOne+iMTwo+iMThr)/3;
+    cout << "the average monthly rainfall for " << a << "," << b << ",and " << c
+            << " is " << avg << "inches" << endl;
+
+    return 0;
+}
+
